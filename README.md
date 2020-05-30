@@ -1,7 +1,7 @@
 # Pretius-APEX-Chart-Export
 Pretius APEX Chart Export is a simple plugin that enables users to export Oracle APEX charts to PNG file just with two clicks.
 
-The plugin uses SaveSvgAsPng (https://github.com/exupero/saveSvgAsPng) and jQuery Context Menu(https://github.com/swisnl/jQuery-contextMenu) libraries.
+The plugin uses SaveSvgAsPng (https://github.com/exupero/saveSvgAsPng) and jQuery Context Menu (https://github.com/swisnl/jQuery-contextMenu) libraries.
 
 ## Preview
 ![](/pretius_apex_chart_export_preview.gif?raw=true)
@@ -28,21 +28,25 @@ MIT
 
 ## Roadmap
 * [ ] Support for Internet Explorer browser
-* [ ] Adding possibility to customize SaveSvgAsPng library options
+* [ ] Possibility to customize SaveSvgAsPng library options
+* [ ] Possibility to export charts using APEX buttons
+* [ ] Support for other Oracle JET components (like Gantts, Gauges, Thematic Maps etc.)
 
 ## Install
 To successfully install/update the plugin follow those steps:
 1. Install the plugin file `dynamic_action_plugin_com_pretius_apex_chart_export.sql` using Oracle APEX plugin import wizard
 
 ## Usage guide
+1. Set `Static ID` for chart regions
 1. Create new dynamic action
   * Set `Event` to `Page Load`
   * Go to `True actions`
 1. Create new `True action`
 1. Change Action to `Pretius APEX Chart Export [Plug-In]`
 1. Set `Fire On Page Load` to `Yes` (if it's not set)
-1. Save, run the page and test chart export
+1. Save, run the page and test chart export by right clicking on the chart and the 'Save as PNG' menu item
 
+Please be aware that exported file name depends on chart region static ID. 
 
 ## Changelog
 

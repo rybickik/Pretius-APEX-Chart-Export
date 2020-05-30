@@ -1,8 +1,8 @@
 {
   "name" : "Pretius APEX Chart Export",
   "version" : "1.0.0",
-  "description" : "Pretius APEX Chart Export is a simple plugin that enables users to export Oracle APEX charts to PNG file just with two clicks.",
-  "keywords" : ["oracle", "apex", "plugin", "chart", "export", "image"],
+  "description" : "Pretius APEX Chart Export is a simple plugin that enables users to export Oracle JET charts to PNG file just with two clicks.",
+  "keywords" : ["oracle", "apex", "plugin", "chart", "export", "image", "oraclejet", "jet"],
   "homepage" : "https://github.com/rybickik/Pretius-APEX-Chart-Export",
   "bugs" : {
     "url" : "https://github.com/rybickik/Pretius-APEX-Chart-Export/issues",
@@ -20,9 +20,9 @@
     "url" : "https://github.com/rybickik/Pretius-APEX-Chart-Export.git"
   },
   "oracle" : {
-    "versions" : ["18.0.0.0"],
+    "versions" : ["12.1.0.1", "12.1.0.2", "12.2.0.1", "18.0.0.0"],
     "apex" : {
-      "versions" : ["20.1.0"],
+      "versions" : ["18.1.0", "18.2.0", "19.1.0", "19.2.0", "20.1.0"],
       "plugin" : {
         "internalName" : "COM.PRETIUS.APEX.CHART_EXPORT",
         "type" : "dynamic action",
